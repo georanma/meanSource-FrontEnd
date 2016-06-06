@@ -1,0 +1,68 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1>Marketing stuff!</h1>
+    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+    <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="form-group">
+        <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="firstName" class="control-label">First Name</label>
+                    <input class="form-control input-md" ngControl="firstName" id="firstName" />
+
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="control-label">Last Name</label>
+                    <input class="form-control input-md" ngControl="lastName" id="lastName" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="email" class="control-label">Email</label>
+                    <input ngControl="email" id="email" class="form-control input-md"  />
+                </div>
+                <div class="col-md-6">
+                    <label for="company" class="control-label">Company</label>
+                    <input ngControl="company" id="compmany" class="form-control input-md" />
+                </div>
+
+            </div>
+
+            <label for="number" class="control-label">Phone Number</label>
+            <input ngControl="number" id="number" class="form-control input-md" />
+
+            
+
+        <!-- <label for="address1">Address 1</label>
+        <input ngControl="address1" id="address1" />
+
+        <label for="address2">Address 2</label>
+        <input ngControl="address2" id="address2" />.
+
+        <label for="city">City</label>
+        <input ngControl="city" id="city" />
+
+        <label for="zipFirstFive">Zip Code</label>
+        <input ngControl="zipFirstFive" id="zipFirstFive" /> -->
+
+        <br />
+        
+
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
+
+
+
+
+
+</div>
+</div>
